@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 function Projects () {
   return (
-    <motion.div className="bg-stone-800 text-5xl font-bold text-red-500 text-center w-screen h-screen">
+    <motion.div className="bg-stone-800 text-5xl font-bold text-red-500 text-center w-screen-dynamic h-screen-dynamic">
       <h1>Projects</h1>
       <motion.div className="w-full grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 place-items-center gap-5 px-5 py-10">
         <motion.div  initial={{ x: '-100%' }} 

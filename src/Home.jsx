@@ -9,7 +9,7 @@ const Home = () => {
   ];
   const [currentLineIndex, setCurrentLineIndex] = useState(0);
   return (
-    <motion.div className="bg-stone-800 opacity-4 w-screen h-screen flex flex-col lg:flex-row items-center justify-between">
+    <motion.div className="bg-stone-800 opacity-4 w-screen-dynamic h-screen-dynamic flex flex-col lg:flex-row items-center justify-between">
     <motion.div  initial={{ x: '-100%' }} 
     animate={{ x: 0 }}  
     exit={{ x: '100%' }}  transition={{ duration: 0.5 }} className="flex flex-col items-start justify-between px-20">

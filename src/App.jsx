@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState ,useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -10,6 +10,22 @@ import Profiles from "./Profiles";
 import Contact from "./Contact";
 import {Routes,Route} from "react-router-dom";
 function App() {
+  useEffect(() => {
+    const setViewportUnits = () => {
+      const vh = window.innerHeight * 0.01;
+      const vw = window.innerWidth * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+      document.documentElement.style.setProperty('--vw', `${vw}px`);
+    };
+
+    setViewportUnits();
+    window.addEventListener('resize', setViewportUnits);
+
+    return () => {
+      window.removeEventListener('resize', setViewportUnits);
+    };
+  }, []);
+
   return (
     <>
      <Navbar/>

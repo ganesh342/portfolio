@@ -23,7 +23,7 @@ function Contact (){
     console.log('Form data submitted:', formData);
   };
   return (
-    <motion.div className="bg-stone-800 text-5xl font-bold text-red-500 text-center w-screen h-screen">
+    <motion.div className="bg-stone-800 text-5xl font-bold text-red-500 text-center w-screen-dynamic h-screen-dynamic">
       <h1>Contact With Me</h1>
       <motion.div className="flex lg:flex-row flex-col items-center justify-evenly py-10">
         <motion.div initial={{ x: '-100%' }} 

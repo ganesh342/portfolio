@@ -2,7 +2,7 @@ import React from 'react';
 import {motion} from 'framer-motion';
 const Skills = () => {
   return (
-    <motion.div className="bg-stone-800 text-5xl font-bold text-red-500 text-center w-screen h-screen">
+    <motion.div className="bg-stone-800 text-5xl font-bold text-red-500 text-center w-screen-dynamic h-screen-dynamic">
         <h1>Skills</h1>
         <motion.div class="w-full grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 place-items-center gap-5 px-5 py-10"><motion.div initial={{ x: '-100%' }} 
     animate={{ x: 0 }}  
