@@ -1,5 +1,10 @@
 import React,{useState} from 'react'
 import {motion} from 'framer-motion';
+import Skills from './Skills';
+import Projects from './Projects';
+import Profiles from './Profiles';
+import Contact from './Contact';
+
 import "./index.css";
 
 const Home = () => {
@@ -9,7 +14,8 @@ const Home = () => {
   ];
   const [currentLineIndex, setCurrentLineIndex] = useState(0);
   return (
-    <motion.div className="bg-stone-800 opacity-4 h-screen-dynamic w-screen-dynamic flex flex-col lg:flex-row items-center justify-between">
+    <div className="flex flex-col">
+    <motion.div id="home" className=" bg-stone-800 opacity-4 h-screen-dynamic w-screen-dynamic flex flex-col lg:flex-row items-center justify-between">
     <motion.div  initial={{ x: '-100%' }} 
     animate={{ x: 0 }}  
     exit={{ x: '100%' }}  transition={{ duration: 0.5 }} className="flex flex-col items-start justify-between px-20">
@@ -70,7 +76,12 @@ const Home = () => {
       </motion.div>
       <motion.div>
       </motion.div>
-    </motion.div>
+      </motion.div>
+      <Skills />
+    <Projects />
+    <Profiles />
+    <Contact />
+    </div>
   )
 }
 
