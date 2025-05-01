@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+/* globals.css */
+html,
+body {
+  @apply m-0 p-0 h-full w-full overflow-x-scroll overflow-y-scroll hide-scrollbar;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+}
+
 .bannerIcon {
     display: inline-flex;
     height: 4rem;
@@ -24,6 +40,17 @@
     transition-duration: .3s;
 }
 
+@media (min-width: 500px) {
+  .min-500-grid {
+    @apply grid-cols-5;
+  }
+}
+
+@media (min-width: 300px) and (max-width:500px){
+  .min-300-grid {
+    @apply grid-cols-3;
+  }
+}
 @keyframes fadeIn {
     from {
       opacity: 0;
