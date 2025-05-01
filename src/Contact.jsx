@@ -23,7 +23,7 @@ function Contact (){
     console.log('Form data submitted:', formData);
   };
   return (
-    <motion.div id="contact" className="bg-stone-800 text-5xl font-bold text-red-500 text-center w-screen-dynamic h-screen-dynamic">
+    <motion.div id="contact" className="bg-gray-900 text-5xl font-bold text-red-500 text-center w-screen-dynamic h-screen-dynamic">
       <h1>Contact With Me</h1>
       <motion.div className="flex lg:flex-row flex-col items-center justify-evenly py-10">
         <motion.div initial={{ x: '-100%' }} 
@@ -34,7 +34,7 @@ function Contact (){
         <motion.div initial={{ x: '100%' }} 
     animate={{ x: 0 }}  
     exit={{ x: '100%' }} transition={{duration:0.5}}>
-        <form onSubmit={handleSubmit} className="flex flex-col gap-10 bg-slate-900 md:wd-[80%] shadow-shadowOne text-gray-400 space-y-4 p-4">
+        <form onSubmit={handleSubmit} className="flex flex-col gap-10 bg-gray-800 md:wd-[80%] shadow-shadowOne text-gray-400 space-y-4 p-4">
       <motion.div>
         <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
         <input

@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import {motion} from 'framer-motion';
 import Skills from './Skills';
 import Projects from './Projects';
@@ -9,24 +9,31 @@ import "./index.css";
 
 const Home = () => {
   const lines = [
-    'a competitive programmer',
-    'full stack developer',
+    'Competitive Programmer',
+    'Full Stack Developer',
   ];
   const [currentLineIndex, setCurrentLineIndex] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentLineIndex((prevIndex) => (prevIndex + 1) % lines.length);
+    }, 3000); // every 3 seconds
+    return () => clearInterval(interval);
+  }, []);
   return (
     <div className="flex flex-col">
-    <motion.div id="home" className=" bg-stone-800 opacity-4 h-screen-dynamic w-screen-dynamic flex flex-col lg:flex-row items-center justify-between">
+    <motion.div id="home" className=" bg-gray-900 opacity-4 h-screen-dynamic w-screen-dynamic flex flex-col lg:flex-row items-center justify-between">
     <motion.div  initial={{ x: '-100%' }} 
     animate={{ x: 0 }}  
     exit={{ x: '100%' }}  transition={{ duration: 0.5 }} className="flex flex-col items-start justify-between px-20">
         <div className="text-slate-400 uppercase">Welcome To My World</div>
         <div className="text-7xl font-semibold py-5"><span className="text-white">Hi,I'm </span><span className="text-red-800">Ganesh <br/>Pilla</span></div>
         <motion.div 
+        key={currentLineIndex}
  initial={{ x: 0 }}
  animate={{ x: '100%' }}
  exit={{ x: '-100%' }}
  transition={{ duration: 2, repeat: Infinity, repeatType: 'reverse' }}
- id="animated-text" class="text-4xl font-bold text-white">Competitive programmer</motion.div>
+ id="animated-text" class="text-4xl font-bold text-white">{lines[currentLineIndex]}</motion.div>
         <div className="flex flex-col lg:flex-row gap-10 items-center justify-between py-5">
           <div className="flex flex-col items-start justify-center">
           <div className="text-slate-400 uppercase">FIND ME ON</div>
@@ -72,7 +79,7 @@ const Home = () => {
     animate={{ x: 0 }}  
     exit={{ x: '100%' }}  transition={{ duration: 0.5 }} className="flex flex-col gap-10 items-center justify-center">
         <img src="/portfolioimg.png" className="w-100 transition-transform duration-300 hover:scale-110"/>
-        <a href="https://drive.google.com/file/d/15mAYnnqnsBX1DODIndkfP8ypzVcxVDfh/view?usp=drive_link" className="text-gray-400 font-semibold text-xl uppercase  hover:text-red-800 border border-gray-900 rounded-lg p-4 bg-gray-900">resume</a>
+        <a href="https://drive.google.com/file/d/15mAYnnqnsBX1DODIndkfP8ypzVcxVDfh/view?usp=drive_link" className="text-gray-400 font-semibold text-xl uppercase  hover:text-red-800 border border-gray-900 rounded-lg p-4 bg-gray-800">resume</a>
       </motion.div>
       <motion.div>
       </motion.div>
