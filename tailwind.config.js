@@ -8,10 +8,10 @@ export default {
     extend: {
       height: {
         // custom height using the --vh variable
-        'screen-dynamic': 'calc(var(--vh, 1vh) * 100)',
+                '100dvh': '100dvh', 
       },
       width: {
-        'screen-dynamic': 'calc(var(--vw, 1vw) * 100)',
+                '100dvw': '100dvw', 
       },
     },
   },
