@@ -5,7 +5,7 @@
 /* globals.css */
 html,
 body {
-  @apply m-0 p-0 h-full w-full overflow-x-scroll overflow-y-scroll hide-scrollbar;
+  @apply m-0 p-0 h-100dvh w-100dvw overflow-x-scroll overflow-y-scroll hide-scrollbar;
 }
 
 .hide-scrollbar::-webkit-scrollbar {
