@@ -8,7 +8,8 @@ export default {
     extend: {
       height: {
         // custom height using the --vh variable
-                '100dvh': '120dvh', 
+                '100dvh': '100dvh', 
+                '150dvh': '150dvh',
       },
       width: {
                 '100dvw': '100dvw', 
