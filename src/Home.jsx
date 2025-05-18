@@ -21,7 +21,7 @@ const Home = () => {
   }, []);
   return (
     <div className="flex flex-col">
-    <motion.div id="home" className=" bg-gray-900 opacity-4 h-100dvh w-100dvw flex flex-col lg:flex-row items-center justify-between">
+    <motion.div id="home" className=" bg-gray-900 opacity-4 h-100dvh w-100dvw flex flex-col lg:flex-row items-start justify-between py-40">
     <motion.div  initial={{ x: '-100%' }} 
     animate={{ x: 0 }}  
     exit={{ x: '100%' }}  transition={{ duration: 0.5 }} className="flex flex-col items-start justify-between px-20">
@@ -78,7 +78,7 @@ const Home = () => {
       <motion.div initial={{ x: '100%' }} 
     animate={{ x: 0 }}  
     exit={{ x: '100%' }}  transition={{ duration: 0.5 }} className="flex flex-col gap-1 md:gap-10 items-center justify-center">
-        <img src="/portfolioimg.png" className="w-100 transition-transform duration-300 hover:scale-110"/>
+        <img src="/portfolioimg.png" className="lg:w-100 md:w-50 sm:wd-30 xs:wd-10 transition-transform duration-300 hover:scale-110"/>
         <a href="https://drive.google.com/file/d/15mAYnnqnsBX1DODIndkfP8ypzVcxVDfh/view?usp=drive_link" className="text-gray-400 font-semibold text-xl uppercase  hover:text-red-800 border border-gray-900 rounded-lg p-2 md:p-4 bg-gray-800">resume</a>
       </motion.div>
       <motion.div>

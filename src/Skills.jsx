@@ -5,7 +5,7 @@ const Skills = () => {
   return (
     <motion.div id="skills" className="bg-gray-900 text-5xl font-bold text-red-500 text-center h-100dvh w-100dvw">
         <h1>Skills</h1>
-        <motion.div class="w-full grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 place-items-center gap-5 px-5 py-10"><motion.div initial={{ x: '-100%' }} 
+        <motion.div class="w-full grid md:grid-cols-3 xs:grid-cols-2 grid-cols-1 place-items-center gap-5 px-5 py-10"><motion.div initial={{ x: '-100%' }} 
     animate={{ x: 0 }}  
     exit={{ x: '100%' }}  transition={{ duration: 0.5 }} class="relative item h-[180px] w-[180px] bg-bodyColor border-4 border-white text-xl font-bodyFont font-bold  text-white flex items-center justify-center rounded-full group perspective-1000">
      <div className="relative w-full h-full transition-transform duration-700 transform-style preserve-3d group-hover:rotate-y-180">
