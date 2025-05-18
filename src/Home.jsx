@@ -21,7 +21,7 @@ const Home = () => {
   }, []);
   return (
     <div className="flex flex-col">
-    <motion.div id="home" className=" bg-gray-900 opacity-4 h-100dvh w-100dvw flex flex-col lg:flex-row items-start justify-between py-40">
+    <motion.div id="home" className=" bg-gray-900 opacity-4 h-100dvh w-100dvw flex flex-col lg:flex-row lg:items-start items-center justify-between py-40">
     <motion.div  initial={{ x: '-100%' }} 
     animate={{ x: 0 }}  
     exit={{ x: '100%' }}  transition={{ duration: 0.5 }} className="flex flex-col items-start justify-between px-20">
