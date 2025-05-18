@@ -10,6 +10,7 @@ export default {
         // custom height using the --vh variable
                 '100dvh': '100dvh', 
                 '150dvh': '150dvh',
+                '200dvh': '200dvh',
       },
       width: {
                 '100dvw': '100dvw', 
