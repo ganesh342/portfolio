@@ -32,7 +32,7 @@ function Projects () {
           <motion.div className="flex flex-row items-center justify-between px-3 py-3">
           <motion.div className="text-xl font-normal">E-commerce App</motion.div>
           <motion.div className="text-xl border-5 border-black rounded-full transition-transform duration-300 hover:scale-110">
-          <a href="https://github.com/ganesh342/ecom-app" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/ganesh342/ECOMAPP" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faGithub} size="1x" /></a>
           </motion.div>
           </motion.div>
