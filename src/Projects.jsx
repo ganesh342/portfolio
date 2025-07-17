@@ -11,7 +11,7 @@ function Projects () {
     animate={{ x: 0 }}  
     exit={{ x: '100%' }} transition={{duration:0.5}}>
         <motion.div className="flex flex-col items-start justify-center border-4 border-stone-700 transition-transform duration-300 hover:scale-110">
-          <img src="chatapp.jpeg" className="w-[500px] h-60"/>
+          <img src="blogapp.png" className="w-[500px] h-60"/>
           <motion.div className="flex flex-row items-center justify-between px-3 py-3">
           <motion.div className="text-xl font-normal">Blogs App</motion.div>
           <motion.div className="text-xl border-5 border-black rounded-full transition-transform duration-300 hover:scale-110">
