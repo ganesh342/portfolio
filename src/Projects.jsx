@@ -13,14 +13,14 @@ function Projects () {
         <motion.div className="flex flex-col items-start justify-center border-4 border-stone-700 transition-transform duration-300 hover:scale-110">
           <img src="chatapp.jpeg" className="w-[500px] h-60"/>
           <motion.div className="flex flex-row items-center justify-between px-3 py-3">
-          <motion.div className="text-xl font-normal">Chat App</motion.div>
+          <motion.div className="text-xl font-normal">Blogs App</motion.div>
           <motion.div className="text-xl border-5 border-black rounded-full transition-transform duration-300 hover:scale-110">
-          <a href="https://github.com/ganesh342/Chat-Application" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/ganesh342/BLOG-APP" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faGithub} size="1x" /></a>
           </motion.div>
           </motion.div>
           <motion.div className="text-left text-sm font-normal text-white">
-          The Real-Time Chat Application is a dynamic and interactive chat platform built with React and Firebase. This application allows users to communicate in real-time, offering a seamless messaging experience with live updates and robust backend support
+           Implemented a personal blog section within the app to share original content, using structured layout components and consistent styling to maintain readability and visual appeal
           </motion.div>
         </motion.div>
         </motion.div>
